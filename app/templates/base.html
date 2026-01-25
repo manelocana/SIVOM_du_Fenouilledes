@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ title if title else 'SIVOM' }}</title>
+    <title>{{ title if title else 'SIVM' }}</title>
 
-    <meta name="description" content="SIVOM du Fenouilledes">
+    <meta name="description" content="SIVM du Fenouillèdes">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
     {% block extra_css %}{% endblock %}
 </head>
 
-
-<body>
+<!-- puedo hacer un body distinto en cada pagina -->
+<body class="{% block  body_class %}{% endblock %}">
 
     {% include 'partials/header.html' %}
 
