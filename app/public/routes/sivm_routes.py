@@ -4,7 +4,7 @@ from flask import Blueprint, render_template
 
 
 
-sivm_bp = Blueprint('sivm', __name__, template_folder='templates')
+sivm_bp = Blueprint('sivm', __name__)
 
 
 
