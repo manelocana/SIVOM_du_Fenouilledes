@@ -2,11 +2,11 @@
 
 from flask import Flask
 
-from app.routes.home_routes import home_bp
-from app.routes.sivm_routes import sivm_bp
-from app.routes.aci_routes import aci_bp
-from app.routes.blog_routes import blog_bp
-from app.routes.contact_routes import contact_bp
+from app.public.routes.home_routes import home_bp
+from app.public.routes.sivm_routes import sivm_bp
+from app.public.routes.aci_routes import aci_bp
+from app.public.routes.blog_routes import blog_bp
+from app.public.routes.contact_routes import contact_bp
 
 
 
