@@ -87,10 +87,11 @@ body.home {
     position: relative;
 }
 
-body.home > * {
+body.home > *:not(header) {
     position: relative;
     z-index: 1;
 }
+
 
 body.home::before {
     content: "";
@@ -109,8 +110,14 @@ body.home::before {
 /* Header */
 
 header {
+    
+}
+
+
+header {
     background-color: var(--green-dark);
     color: #fff;
+    z-index: auto;
 }
 
 .container-header {
