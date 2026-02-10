@@ -257,6 +257,10 @@ footer nav a {
     font-size: 0.9rem;
 }
 
+footer h3 {
+    color: white;
+}
+
 footer small {
     display: block;
     text-align: center;
