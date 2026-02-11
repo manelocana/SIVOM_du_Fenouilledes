@@ -24,7 +24,11 @@
 
     <section class="description">
         <div class="container">
-            <h2>UN SYNDICAT INTERCOMMUNAL ENGAGÉ POUR LE FENOUILLÈDES</h2>
+
+            <div class="text-center">
+                <h2>UN SYNDICAT INTERCOMMUNAL ENGAGÉ POUR LE FENOUILLÈDES</h2>
+            </div>
+
             <p><strong>
                 Créé en 1974, le SIVM du Fenouillèdes (Syndicat Intercommunal à Vocation Multiple) est un établissement public de coopération intercommunale basé à Saint Paul de Fenouillet dans le département des Pyrénées-Orientales.
 
@@ -42,25 +46,15 @@
                 
                 Proximité, efficacité et solidarité sont au cœur des valeurs du SIVM du Fenouillèdes. En agissant à la fois pour l’aménagement, la prévention et l’humain, le syndicat contribue activement au dynamisme et à la qualité de vie des communes et de leurs habitants. 
             </strong></p>
-
-            <img src="{{ url_for('static', filename='img/home_carte_fenouillet.jpg') }}" alt="img carte fenouillet">
-
         </div>
     </section>
 
 
+    <div class="hero-section">
+        <img src="{{ url_for('static', filename='img/home_carte_fenouillet.jpg') }}" alt="img carte fenouillet">
+    </div>
 
-    <!-- <section class="images-home-section">
-        <div class="container">
-            <h2>Images que on peu utiliser generals</h2>
-            <div class="imagenes">
-                <img src="{{ url_for('static', filename='img/julien_hero.jpg') }}" alt="Tracteur">
-                <img src="{{ url_for('static', filename='img/julien_hero.jpg') }}" alt="Tracteur">
-                <img src="{{ url_for('static', filename='img/julien_hero.jpg') }}" alt="Tracteur">
-                <img src="{{ url_for('static', filename='img/julien_hero.jpg') }}" alt="Tracteur">
-            </div>
-        </div>
-    </section> -->
+
 
 
 {% endblock %}

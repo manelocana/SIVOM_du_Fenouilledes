@@ -5,61 +5,46 @@
 {% block title %}SIVM contact{% endblock %}
 
 {% block content %}
-<section class="contact-section flex-column">
 
 
-    <div class="flex-center">
+<section class="contact-section">
+
+    <div class="hero-section">
+        <img src="{{ url_for('static', filename='img/hero_sivom.jpg') }}" alt="Tracteur">
+    </div>
+
+    <div class="container contact-hours text-center">
         <h1>Contact</h1>
-    </div>
-
-
-    <!-- hero -->
-    <div class="hero-section container">
-        <img src="{{ url_for('static', filename='img/hero_sivom.jpg') }}" alt="Contact SIVM">
-    </div>
-
-    
-
-    <!-- info contanct-->
-
-    <div class="container flex-column text-center">
-        <h2>Heures d’ouverture du SIVM du Fenouillèdes :</h2>
+        <h2>Heures d’ouverture du SIVM du Fenouillèdes :</h2>
         <p>Lundi, Mardi, Mercredi de 08h à 16h</p>
-        <p>Jeudi de 08h à 15h </p>
+        <p>Jeudi de 08h à 15h</p>
         <p>Vendredi de 08h à 12h</p>
     </div>
 
-    <div class="container flex-column text-center">
-        <h2>Vous pouvez nous contacter </h2>
-        <p><strong>Par mail :</strong>Il est préférable de remplir le formulaire de contact pour toute candidature:
-            <a href="mailto:sivm.fenouilledes@wanadoo.fr">sivm.fenouilledes@wanadoo.fr</a> (pièce jointe CV)</p>
-        <p><strong>Par téléphone :</strong>04 68 59 09 08</p>
-        <p><strong>Par courrier :</strong>50 avenue du Général de Gaulle – 66220 SAINT PAUL DE FENOUILLET</p>
-        
-        <p>Suivez-nous sur notre page Facebook 
-            <a href="https://www.facebook.com/profile.php?id=100082044503430&locale=fr_FR"
-                target="_blank"
-                class="link-normal">SIVM du Fenouillèdes</a>
-        </p>
-    </div>
 
+    <div class="container contact-main">
 
-    <!-- google maps -->
-    <div class="container">
-        <!-- <h2>Adresse GPS</h2> -->
-         <br>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1953.6024943819327!2d2.4917455720010344!3d42.807448837172494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b01fb0007a1131%3A0x5d6368e41e973fd4!2sSivom%20De%20Fenouill%C3%A8de%20Syndicat%20Intercommunal%20%C3%A0%20Vocations%20Multiples!5e0!3m2!1ses!2sfr!4v1768436477279!5m2!1ses!2sfr" 
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>"
-            
-        </iframe>
+        <div class="contact-info">
+            <h2>Vous pouvez nous contacter</h2>
+            <p><strong>Par mail :</strong>
+                <a href="mailto:sivm.fenouilledes@wanadoo.fr">sivm.fenouilledes@wanadoo.fr</a>
+            </p>
+            <p><strong>Par téléphone :</strong> 04 68 59 09 08</p>
+            <p><strong>Par courrier :</strong> 50 avenue du Général de Gaulle 66220 SAINT PAUL DE FENOUILLET</p>
+            <p>Suivez-nous sur <a href="https://www.facebook.com/profile.php?id=100082044503430&locale=fr_FR" target="_blank" class="link-normal">Facebook</a></p>
+        </div>
+
+        <div class="contact-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2927.06141532499!2d2.4892590759464492!3d42.808188206672746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b01fb0007a1131%3A0x5d6368e41e973fd4!2sSivom%20De%20Fenouill%C3%A8de%20Syndicat%20Intercommunal%20%C3%A0%20Vocations%20Multiples!5e0!3m2!1sfr!2sfr!4v1770776661955!5m2!1sfr!2sfr"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
     </div>
 
 </section>
+
+
 {% endblock %}
